@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Form UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+       
+
+        <form action="/myaction.php">
+            <div class="formdesign">
+                <label for="fullname">Full Name :</label><br>
+                <input type="text" id="fullname" placeholder="What should we call you?" required aria-required="true">
+            </div>
+
+            <div class="formdesign">
+                <div class="email">
+                    <label for="email">Email :</label><br>
+                    <input type="email" id="email" value="mubeen.123@gmail.com" required aria-required="true"
+                        aria-invalid="false">
+                    <p>Email is already taken</p>
+                    <span class="error-message">Enter valid Email.</span>
+                </div>
+            </div>
+
+            <div class="formdesign">
+                <label for="password">Enter Password:</label><br>
+                <input type="password" id="password" placeholder="xxxxxxxx" required aria-required="true"
+                    aria-invalid="false">
+                <span class="error-message">Password must be at least 6 characters long.</span>
+            </div>
+
+            <div class="formdesign">
+                <label for="confirmPassword">Confirm Password:</label><br>
+                <input type="password" id="confirmPassword" placeholder="xxxxxxxx" required aria-required="true"
+                    aria-invalid="false">
+            </div>
+
+            <input class="btn" type="submit" value="Update Profile">
+        </form>
+
+        <div class="right-side">
+            <div class="circle">
+                <div class="percent">
+                    <p>65%</p>
+                </div>
+            </div>
+            <h3>Profile Completeness</h3>
+            <div class="list">
+                <p class = 'completeTask'>Create Account</p>
+                <p class = 'completeTask'>Update Roadmap Progress</p>
+                <p class = 'completeTask'>Setup Public Profile</p>
+                <p class = 'incompleteTask'>Complete your First Project</p>
+                <p class = 'incompleteTask'>Invite your Friends</p>
+            </div>
+        </div>
+        
+    </div>
+</body>
+
+</html>

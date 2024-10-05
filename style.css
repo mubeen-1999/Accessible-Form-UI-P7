@@ -1,0 +1,138 @@
+body {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    width: 80%;
+
+}
+
+label {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.formdesign {
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.formdesign input {
+    width: 25%;
+    padding: 12px 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: 2px solid #4CAF50;
+    /* Adds a green outline around the focused input */
+    border-color: #4CAF50;
+    /* Changes the border color */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.8);
+    /* Adds a subtle shadow effect */
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+    display: none;
+    margin-bottom: 15px;
+}
+
+input:focus:invalid+.error-message {
+    display: block;
+    /* Show error message if input is invalid */
+}
+
+input:valid+.error-message {
+    display: none;
+    /* Hide error message if input is valid */
+}
+
+.email input,
+.email p {
+    outline: none;
+    color: rgb(255, 67, 67);
+    border-color: rgb(255, 67, 67);
+
+}
+
+.email p {
+    margin-top: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.email {
+    padding-bottom: 20px;
+}
+
+.btn {
+    border-radius: 9px;
+    width: 26%;
+    height: 50px;
+    font-size: 20px;
+    margin: 22px 20px 20px 40px;
+    background-color: black;
+    color: white;
+}
+
+.right-side {
+
+    position: absolute;    /* Allows positioning within the container */
+    top: 40px;    /* Aligns it to the top */
+    right: 60px;
+    
+}
+
+.circle {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 4px solid rgb(209, 205, 205);    /* Default border color */
+    border-left-color: black;
+    border-top-color: black;
+    border-bottom-color: black;
+    margin-left: 50px;
+}
+
+h3 {
+    margin-left: 30px;
+}
+
+.percent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgrey;
+    width: 200px;
+    ;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.completeTask {
+    text-decoration: line-through;
+    font-size: 16px;
+    color: grey;
+}
+
+.incompleteTask {
+    font-size: 16px;
+}
